@@ -1,6 +1,8 @@
 CREATE DATABASE elective_system;
 USE elective_system;
 
+CREATE USER 'elective_user'@'appuser' IDENTIFIED BY 'password123';
+
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
